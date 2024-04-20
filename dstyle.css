@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+body{
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    top:0;
+    left:0;
+    bottom:0;
+    width:102px;
+    height:100vh;
+    padding:0 1.7rem;
+    color:aliceblue;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rebeccapurple;
+}
+.sidebar:hover{
+    width:25vw;
+    transition: 0.5px;
+}
+.logo{
+    height:80px;
+    padding: 16px;
+}
+.menu{
+    height:88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5 ease-in-out;
+}
+.menu li:hover, 
+.active{
+    background-color: rgb(31, 23, 52);
+    color:black;
+}
+.menu a{
+    color: aliceblue;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2 rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+
+}
+/* MAINNNNNNNNNNNNNNNNNNNNN*/
+.main--content{
+    position: relative;
+    background-color: rgb(191, 191, 191);
+    width: 50%;
+    height: 80%;
+    padding: 1rem;
+    box-sizing: border-box; 
+}
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 40px 10rem;
+    margin-bottom: 0rem;
+    
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+}
+.container img{
+    width: 100%;
+
+}
+.box{
+    width: 32%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    background: white;
+    border-radius: 10px;
+    transition: 0.9;
+}
+.box:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+    cursor: pointer;
+}
+h3,p{
+    text-align: center;
+    color: rgb(104, 92, 92);
+}
+p{
+    font-size: 15px;
+    padding: 0 5px;
+}
+@media (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        width: 85%;
+        display: block;
+    }
+    .box{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}

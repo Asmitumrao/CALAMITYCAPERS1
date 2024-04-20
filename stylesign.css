@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body{
+    background: rgb(208, 208, 208);
+    font-family: Poppins;
+
+}
+.loginbox{
+    width: 300px;
+    height: 400px;
+    background: #4faaff;
+    color: white;
+    margin: 80px auto;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+.logo{
+
+    width: 135px;
+    height:112px;
+    border-radius: 50%;
+    position: relative;
+    top: -70px;
+    left: calc(50% - 50px);
+
+}
+h1{
+    text-align: center;
+    margin-top: -60px;
+}
+
+label{
+
+    font-size: 18px;
+    display: block;
+    margin-left: 20px;
+}
+
+input{
+
+    width: 80%;
+    margin: 0 0 20px 20px;
+}
+
+input[type="text"],input[type="password"]{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    background: #fb2525;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30%;
+}
+
+input[type="submit"]:hover{
+    background: blueviolet;
+}
